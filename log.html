@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录 - 华为</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .loginBox{
+            max-width:542px;
+            margin:0 auto;
+        }
+        .loginBox .logo{
+            display:block;
+            margin:0 auto;
+            margin-top:30px;
+            margin-bottom:45px;
+        }
+        .bigBox{
+            max-width:542px;
+            box-shadow: 2px 0 46px rgba(0, 0, 0, 0.18);
+            padding:36px 90px;
+            margin-bottom: 60px;
+            border-radius:5px;
+        }
+        .bigBox h1{
+            font-size:48px;
+        }
+        .bigBox p{
+            font-size:16px;
+            line-height:30px;
+            margin-top:25px;
+        }
+        .bigBox input{
+            width:360px;
+            height:48px;
+            border:1px solid #d4d4d4;
+            line-height: 48px;
+            font-size:16px;
+            text-indent: 15px;
+            outline: none;
+            border-radius:5px;
+        }
+        .bigBox a{
+            color:#000;
+        }
+        .bigBox .missPw{
+            font-size:16px;
+            line-height: 45px;
+        }
+        .bigBox .btn{
+            margin-top:26px;
+            text-align:center;
+            width:362px;
+            height:48px;
+            background-color:#f66f6a;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            line-height:48px;
+            color:#fff;
+            outline:none;
+        }
+        .bigBox .btn:hover{
+            cursor: pointer;
+            background-color:#a54b4a;
+        }
+        .bigBox .nowReg{
+            display:block;
+            text-align:center;
+            font-size:18px;
+            margin-top:27px;
+            margin-bottom:5px;
+        }
+        .bigBox .otherLogin{
+            display:block;
+            border-top:1px solid #d4d4d4;
+            padding-top:33px;
+            font-size:18px;
+            text-align:center;
+        }
+        .bigBox .login_pic{
+            text-align: center;
+        }
+        .login_wx{
+            width:36px;
+            height:36px;
+            margin-right:20px;
+        }
+        .login_in{
+            width:36px;
+            height:36px;
+        }
+        .bigBox .login_pic img:hover{
+            cursor: pointer;
+        }
+        .bigBox .help_p{
+            margin-top:25px;
+        }
+        .bigBox .help_p .login_help{
+            width:20px;
+            height:20px;
+            vertical-align:middle;
+        }
+        .bigBox .help_p a{
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginBox">
+        <a href="index.html">
+            <img class="logo" src="img/huawei_logo.png" alt="">
+        </a>
+        <div class="bigBox">
+            <form action="php/log.php" method="POST">
+                <h1>登录</h1>
+                <p>帐号/邮箱<span style="color:red;">*</span></p>
+                <input name="useremail" type="text" placeholder="请输入帐号/邮箱">
+                <p>密码<span style="color:red;">*</span></p>
+                <input name="userpw" type="password" placeholder="请输入密码"><br/>
+                <a class="missPw" href="">忘记密码</a><br/>
+                <input class="btn" type="submit" value="登录"><br/>
+            </form>
+            <a class="nowReg" href="reg.html" target="_blank">立即注册 ></a><br/>
+            <span class="otherLogin">通过其它方式登录:</span><br/>
+            <div class="login_pic">
+                <img class="login_wx" src="img/login_wx.png" alt="">
+                <img class="login_in" src="img/login_in.png" alt="">
+            </div>
+            <p class="help_p">
+                <img class="login_help" src="img/login_help.png" alt="">
+                <a href="">获取更多帮助?</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

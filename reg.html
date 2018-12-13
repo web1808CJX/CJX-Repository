@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建网站账号 - 华为</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .regBox{
+            max-width:542px;
+            margin:0 auto;
+        }
+        .regBox .logo{
+            display:block;
+            margin:0 auto;
+            margin-top:30px;
+            margin-bottom:45px;
+        }
+        .bigBox{
+            max-width:542px;
+            box-shadow: 2px 0 46px rgba(0, 0, 0, 0.18);
+            padding:36px 90px;
+            margin-bottom: 60px;
+            border-radius:5px;
+        }
+        .bigBox h1{
+            font-size:48px;
+        }
+        .bigBox p{
+            font-size:16px;
+            line-height:30px;
+            margin-top:25px;
+        }
+        .bigBox input{
+            width:360px;
+            height:48px;
+            border:1px solid #d4d4d4;
+            line-height: 48px;
+            font-size:16px;
+            text-indent: 15px;
+            outline: none;
+            border-radius:5px;
+        }
+        .bigBox a{
+            color:#000;
+        }
+        .chooseBox{
+            margin-top:30px;
+        }
+        .chooseBox span{
+            font-size:16px;
+        }
+        .chooseBox .radioBox{
+            margin-top:8px;
+        }
+        .chooseBox .radioBox input{
+            width:22px;
+            height:22px;
+            vertical-align:middle;
+            margin:0px 3px;
+        }
+        .chooseBox em{
+            display:block;
+            margin-top:12px;
+            font-size:14px;
+            color:#282828;
+        }
+
+        .verificationBox{
+            margin-top:20px;
+        }
+        .verificationBox span{
+            font-size:18px;
+            line-height:50px;
+        }
+        .verificationBox input{
+            width:179px;
+            margin-right:15px;
+        }
+        .verificationBox .verification_small_box img{
+            vertical-align:middle;
+        }
+
+        .bigBox .btn{
+            margin-top:40px;
+            margin-bottom:15px;
+            text-align:center;
+            width:362px;
+            height:48px;
+            background-color:#f66f6a;
+            border:none;
+            border-radius:5px;
+            font-size:18px;
+            line-height:48px;
+            color:#fff;
+            outline:none;
+        }
+        .bigBox .btn:hover{
+            cursor: pointer;
+            background-color:#a54b4a;
+        }
+    </style>
+</head>
+<body>
+    <div class="regBox">
+        <a href="index.html">
+            <img class="logo" src="img/huawei_logo.png" alt="">
+        </a>
+        <div class="bigBox">
+            <form action="php/reg.php" method="POST">
+                <h1>立即注册</h1>
+                <p>邮箱<span style="color:red;">*</span></p>
+                <input name="useremail" id="inpEmail" type="text"><span style="height:16px;"></span>
+                <p>密码<span style="color:red;">*</span></p>
+                <input name="userpw" id="inpPw" type="password"><span style="height:16px;"></span>
+                <p>姓<span style="color:red;">*</span></p>
+                <input name="userid" id="inpId" type="text"><span style="height:16px;"></span>
+                <p>名<span style="color:red;">*</span></p>
+                <input name="username" id="inpName" type="text"><span style="height:16px;"></span><br/>
+                <div class="chooseBox">
+                    <span>我愿意接收华为为我推荐的相关信息</span><br/>
+                    <div class="radioBox">
+                        <input type="radio" name="aa" id="yes">是
+                        <input type="radio" name="aa" id="no" style="margin-left:15px;">否
+                    </div>
+                    <em>* 点击提交表明你接受华为的<a href="">隐私政策</a>和<a href="">使用条款.</a></em>
+                </div>
+                <div class="verificationBox">
+                    <span>验证码</span>
+                    <div class="verification_small_box">
+                        <input type="text">
+                        <img src="img/VerificationCodePic.gif" alt="">
+                    </div>
+                </div>
+                <input class="btn" type="submit" value="提交"><br/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script>
+    function $(id){
+        return document.getElementById(id);
+    }
+    var inpEmail = $("inpEmail");
+    var inpPw = $("inpPw");
+    var inpId = $("inpId");
+    var inpName = $("inpName");
+
+
+    //inp代表输入框  regEx代表正则表达式
+    function check(inp, regEx) {
+        inp.onblur = function () {
+            if (regEx.test(this.value)) {
+                this.nextSibling.innerHTML = "";
+                this.nextSibling.style.color = "green";
+            } else {
+                this.nextSibling.innerHTML = "输入错误";
+                this.nextSibling.style.color = "red";
+            }
+        }
+    }
+	
+    var regEmail = /^(126|163|qq)+([+-.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    var regPw = /^[a-zA-Z]\w{5,17}$/;
+    var regId = /^[\u4e00-\u9fa5]{1,}$/;
+    var regName = /^[\u4e00-\u9fa5]{2,}$/;
+
+
+    check(inpEmail, regEmail);
+    check(inpPw, regPw);
+    check(inpId, regId);
+    check(inpName, regName);
+</script>

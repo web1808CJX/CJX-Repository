@@ -1,0 +1,20 @@
+div {
+  width: 500px;
+  height: 500px;
+  background: pink; }
+  div p {
+    width: 200px;
+    height: 200px;
+    background: skyblue;
+    color: black; }
+    div p span {
+      display: inline-block;
+      padding: 20px 20px;
+      background: red;
+      color: #fff; }
+  div h2 {
+    font-size: 50px;
+    line-height: 100px;
+    color: purple; }
+
+/*# sourceMappingURL=sass_a.css.map */

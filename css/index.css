@@ -1,0 +1,849 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:none;
+    display:block;
+}
+ul{
+    list-style: none;
+}
+h2{
+    font-size:38px;
+    color:#000;
+}
+.zsy_one{
+    width:100%;
+    background-color:#000;
+}
+.zsy_two{
+    width:100%;
+    background-color:#fff;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.zsy_three{
+    width:100%;
+    height:748px;
+    margin-top:3px;
+    background-color:#fff;
+    position: relative;
+}
+.zsy_four{
+    width:100%;
+}
+.zsy_eight{
+    width:100%;
+    background:#f0f0f0;
+}
+.zsy_nine{
+    width:100%;
+    background:#000;
+}
+/* --------------------------------------------------------------------------- */
+/* nav导航栏 */
+    .navBox_one{
+        width:100%;
+        max-width:1128px;
+        height:28px;
+        background-color:#000;
+        font-size:12px;
+        line-height:28px;
+        margin:0 auto;
+    }
+    .navBox_one a{
+            color:#fff;
+    }
+    .navLeft{
+        float: left;
+    }
+    .navLeft span{
+        margin-left:11px;
+        float: left;
+    }
+    .navLeft img{
+        width:16px;
+        height:16px;
+        padding-top:7px;
+        vertical-align: middle;
+        float:left;
+    }
+    .navRight{
+        float:right;
+    }
+    .navRight b{
+        float:left;
+    }
+    .navRight img{
+        width:16px;
+        height:16px;
+        padding-top:7px;
+        margin:0 10px;
+        vertical-align: middle;
+        float:left;
+    }
+    .navRight .login{
+        border-left:1px solid #ccc;
+        float:left;
+    }
+    .navRight .login b{
+        margin-right:25px;
+    }
+/* --------------------------------------------------------------------------- */
+/* logo */
+    header{
+        width:100%;
+        max-width:1128px;
+        height:74px;
+        margin:0 auto;
+        font-size:18px;
+    }
+    header ul a img{
+        width:12px;
+        height:12px;
+        margin:30px 9px 0 9px;
+        vertical-align: middle;
+        float:right;
+    }
+    header ul a{
+        margin-left:19px;
+        color:#282828;
+    }
+    header ul li{
+        float:left;
+        line-height:74px;
+        margin-right:25px;
+    }
+    header .login{
+        margin-top:20px;
+        margin:20px 60px 0 11px;
+        float:left;
+    }
+    header .picZh1{
+        display:inline-block;
+        width:19px;
+        height:33px;
+        vertical-align: middle;
+        overflow: hidden;
+        position: relative;
+    }
+    header .picZh2{
+        display:inline-block;
+        width:25px;
+        height:29px;
+        vertical-align: middle;
+        overflow: hidden;
+        position: relative;
+    }
+    header .picZh1 img{
+        position: absolute;
+        top:-120px;
+        left:-187px;
+    }
+    header .picZh2 img{
+        position: absolute;
+        top:-87px;
+        left:-188px;
+    }
+    header .xhx{
+        display:block;
+        width:2px;
+        height:50px;
+        margin-top:10px;
+        margin-right:40px;
+        background-color:#d4d4d4;
+        float:left;
+    }
+    header .ulSecond li a{
+        margin-left:0;
+    }
+    header .ulSecond span{
+        display:inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+    header .ulSecond .loding_jt{
+        width:25px;
+        height:25px;
+        position:absolute;
+        top:-5px;
+        left:0px;
+    }
+    header .ulSecond a img{
+        width:20px;
+        height:20px;
+        margin-top:-1px;
+        float: left;
+    }
+    header .ulSecond a:hover .loding_jt{
+        position:absolute;
+        top:-8px;
+        left:3px;
+    }
+    header li:hover a{
+        color:rgb(247, 150, 166);
+    }
+    header .search{
+        width:24px;
+        height:25px;
+        margin-top:28px;
+        float:right;
+        margin-right:22px;
+    }
+    header .search img{
+        width:24px;
+        height:25px;
+    }
+/* --------------------------------------------------------------------------- */ 
+/* 轮播图 */
+    /* smallPic */
+    .smallPic{
+        max-width:1106px;
+        height:188px;
+        margin:0 auto;
+        margin-bottom:90px;
+        border-radius:10px;
+        box-shadow:0 0 100px rgba(0, 0, 0, 0.2);
+        position:absolute;
+        top:460px;
+        left:0;
+        right:0;
+        background-color:#fff;
+    }
+    .userBox img{
+        padding-top:10px;
+        padding-right:30px;
+        float:left;
+    }
+    .userBox{
+        padding-top:22px;
+        padding-bottom:22px;
+        float:left;
+    }
+    .userBox a{
+        display:inline-block;
+        max-width:274px;
+        height:130px;
+        padding:10px 45px 0 45px;
+        border-right:1px solid #ccc;
+    }
+    .userBox .everUser{
+        max-width:274px;
+    }
+    .everUser h3{
+        font-size:22px;
+        line-height:34px;
+        color:#000;
+    }
+    .everUser p{
+        font-size:18px;
+        line-height:34px;
+        color:#808080;
+    }
+/* --------------------------------------------------------------------------- */
+/* morePhone */
+        /* left */
+    .phoneBox{
+        max-width:1366px;
+        min-height:641px;
+        padding-bottom:100px;
+        margin:0 auto;
+    }
+    .phonebox_left{
+        width:630px;
+        height:450px;
+        background-color:#32bae0;
+        float: left;
+        position: relative;
+    }
+    .phonebox_left .text_one{
+        padding-top:100px;
+        margin-left:115px;
+    }
+    .phonebox_left .text_one span{
+        display:block;
+        font-size:22px;
+        color:#fff;
+        margin-top:30px;
+        margin-right:15px;
+        float:left;
+    }
+    .phonebox_left .text_one p{
+        margin-top:85px;
+        font-size:12px;
+        color:#fff;
+    }
+    .phonebox_left .jt{
+        margin-top:30px;
+        width:40px;
+        height:32px;
+    }
+    .phonebox_left .ponePic_one{
+        position:absolute;
+        top:65px;
+        left:422px;
+    }
+    .phonebox_left .ponePic_two{
+        position:absolute;
+        top:550px;
+        left:440px;
+    }
+    .phonebox_left:hover .text_one{
+        cursor: pointer;
+    }
+    .phonebox_left:hover span{
+        margin-right:25px;
+        transition-duration: 0.2s;
+    }
+    .phonebox_left:hover .ponePic_one{
+        position: absolute;
+        top:45px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+    .phonebox_left:hover .ponePic_two{
+        position: absolute;
+        top:570px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+    }
+        /* right */
+    .phonebox_right{
+        width:452px;
+        height:640px;
+        background-color:#dde6ed;
+        margin-left:165px;
+        float: left;
+        border-radius:5px;
+    }
+    .phonebox_right img{
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+    }
+    .phonebox_right .text_two{
+        padding:40px 60px;
+    }
+    .phonebox_right .text_two span{
+        font-size:14px;
+        color:#808080;
+        line-height:22px;
+    }
+    .phonebox_right .text_two h2{
+        margin-top:10px;
+        margin-bottom:60px;
+        font-size:38px;
+        line-height:48px;
+    }
+    .phonebox_right .text_two p{
+        font-size:22px;
+        line-height:34px;
+        margin-right:15px;
+        float: left;
+    }
+    .phonebox_right .text_two img{
+        width:40px;
+        height:35px;
+        float: left;
+    }
+    .phonebox_right:hover .text_two p{
+        margin-right:25px;
+        transition-duration: 0.2s;
+    }
+    .phonebox_right:hover{
+        cursor: pointer;
+    }
+        /* video */
+    .phoneVideo{
+        width:1366px;
+        height:622px;
+        background-image:url("../img/morePhone_05.jpg") ;
+        background-size:cover;
+        margin:0 auto;
+        position: relative;
+        margin-bottom:146px;
+    }
+    .phoneVideo .text_three{
+        width:820px;
+        height:96px;
+        text-align:center;
+        margin:0 auto;
+        margin-bottom:15px;
+        padding-top:175px;
+    }
+    .phoneVideo .text_three h2{
+        line-height:48px;
+        color:#fff;
+    }
+    .phoneVideo .videoGo{
+        width:70px;
+        height:70px;
+        border-radius:50%;
+        border:2px solid #fff;
+        margin:0 auto;
+        position: relative;
+    }
+    .phoneVideo .video_go img{
+        width:25px;
+        height:25px;
+        position: absolute;
+        top:23px;
+        left:25px;
+    }
+    .phoneVideo .video_go_zgc{
+        width:70px;
+        height:70px;
+        border-radius:50%;
+        background-color:black;
+        opacity:.1;
+        position:absolute;
+    }
+    .phoneVideo:hover{
+        cursor: pointer;   
+    }
+    .phoneVideo:hover .videoGo{
+        transform: scale(1.1);
+        transition:all .3s;
+    }
+    #videoPlay_ok{
+        display:block;
+        margin:0 auto;
+        display:none;
+        margin-bottom:146px;
+    }
+/* --------------------------------------------------------------------------- */
+/* 展会活动 */
+    .showActive{
+        max-width:1128px;
+        margin:0 auto;
+        padding-bottom:120px;
+    }
+        /* top */
+    .showActive_top{
+        max-width:1128px;
+        line-height:38px;
+        height:40px;
+        padding-bottom:60px;
+        padding-left:11px;
+        padding-right:11px;
+    }
+    .showActive_top h2{
+        float:left;
+    }
+    .showActive_top a{
+        width:133px;
+        height:40px;
+        float:right;
+    }
+    .showActive_top a span{
+        font-size:22px;
+        color:#222;
+        float: left;
+    }
+    .showActive_top a img{
+        margin-top:5px;
+        margin-left:5px;
+        width:30px;
+        height:30px;
+        float:left;
+    }
+    .showActive_top a:hover span{
+        margin-right:10px;
+        transition:.2s;
+    }
+        /* bottom */
+    .showActive_bottom{
+        width:1128px;
+        background-color:#dce6ee;
+        border-radius:7px;
+        margin-top:60px;
+        margin-bottom:60px;
+        padding-top:50px;
+        padding-bottom:60px;
+        position: relative;
+    }
+    .showActiveText{
+        width:430px;
+        padding-left:10px;
+        padding-right:50px;
+        margin-left:100px;
+    }
+    .showActiveText p:first-child{
+        font-size:14px;
+        color:#808080;
+        line-height:22px;
+    }
+    .showActiveText h3{
+        font-size:28px;
+        line-height:38px;
+    }
+    .showActiveText span{
+        font-size:18px;
+        line-height:30px;
+    }
+    .showActiveText .text{
+        font-size:18px;
+        line-height:30px;
+        margin-top:12px;
+    }
+    .showActiveText a{
+        display:block;
+        margin-top:40px;
+        color:#282828;
+    }
+    .showActiveText a span{
+        font-size:22px;
+        line-height:34px;
+        float: left;
+    }
+    .showActiveText a img{
+        width:40px;
+        height:35px;
+        padding-left:10px;
+    }
+    .showActive_bottom:hover a span{
+        margin-right:15px;
+        transition:.2s;
+    }
+    .showActive_bottom:hover{
+        cursor: pointer;
+    }
+    .showActive_bottom .showActivePic{
+        position: absolute;
+        top:-65px;
+        right:0;
+        border-radius: 7px;
+    }
+/* --------------------------------------------------------------------------- */
+/* 成功故事 */
+    .successStory{
+        max-width:1128px;
+        margin:0 auto;
+        padding-bottom:60px;
+    }
+    .successStory_text{
+        width:1128px;
+        height:435px;
+        padding-bottom:60px;
+    }
+    .successStory_text_box{
+        width:314px;
+        height:257px;
+        background:#dde6ed;
+        margin:0 30px;
+        padding-top:60px;
+        border-radius:7px;
+        margin-top:120px;
+        float: left;
+        position: relative;
+    }
+    .successStory_text_more{
+        padding:30px 40px;
+    }
+    .successStory_text_more p{
+        font-size:14px;
+        line-height:22px;
+        color:#808080;
+    }
+    .successStory_text_more h3{
+        font-size:22px;
+        line-height:32px;
+        margin-top:5px;
+        height:105px;
+        margin-bottom:40px;
+    }
+    .successStory_text_box .storyPic{
+        border-top-left-radius:7px;
+        border-top-right-radius:7px;
+        position: absolute;
+        top:-120px;
+        left:0px;
+    }
+    .successStory_text_box:hover .storyPic{
+        margin-left:-20px;
+        transition:.2s;
+    }
+    .successStory_text_box:hover{
+        cursor: pointer;
+    }
+    .successStory_text_more a{
+        font-size:22px;
+        line-height:34px;
+        display:block;
+        float:left;
+    }
+    .successStory_text_more a img{
+        display: block;
+        width:25px;
+        height:25px;
+        float:right;
+        margin-top:5px;
+        margin-left:10px;
+    }
+    .successStory_text_more .storyPic_jt{
+        width:30px;
+        height:30px;
+        margin-left:-23px;
+        margin-top:-1px;
+    }
+    .successStory_text_box:hover .storyPic_jt{
+        margin-left:-20px;
+        margin-top:-4px;
+        transition:.1s;
+    }
+    .successStory_text_more .storyMore{
+        font-size:22px;
+        line-height:34px;
+        display:block;
+        float:left;
+    }
+    .successStory_text_more .storyMore img{
+        width:35px;
+        height:30px;
+        margin-top:2px;
+        margin-left:10px;
+        float:right;
+    }
+    .successStory_text_box:hover .storyMore img{
+        margin-left:20px;
+        transition:.2s;
+    }
+/* --------------------------------------------------------------------------- */
+/* 近期新闻 */
+    .news{
+        max-width:1128px;
+        margin: 0 auto;
+        padding-bottom:100px;
+    }
+    .newsBox{
+        max-width:1128px;
+        height:496px;
+    }
+    /* newsBox_left */
+    .newsBox_left{
+        width:408px;
+        padding:0 20px;
+        margin:0 11px;
+        float: left;
+    }
+    .newsBox_left .newsOne{
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        width:408px;
+        height:220px;
+    }
+    .newsBox_left .newsBox_more{
+        background:#dde6ed;
+        padding:30px 40px;
+        float:left;
+    }
+    .newsBox_left .newsBox_more p{
+        font-size:14px;
+        line-height:22px;
+        color:#808080;
+    }
+    .newsBox_left .newsBox_more h3{
+        font-size:22px;
+        line-height:32px;
+        margin-top:5px;
+    }
+    .newsBox_left .newsBox_more span{
+        display: block;
+        font-size:22px;
+        line-height:34px;
+        margin-top:90px;
+        float:left;
+    }
+    .newsBox_left .newsBox_more img{
+        width:40px;
+        height:35px;
+        margin-left:10px;
+        float: right;
+    }
+    .newsBox_left:hover .newsBox_more img{
+        margin-left:20px;
+        transition:.2s;
+    }
+    .newsBox_left:hover{
+        cursor: pointer;
+    }
+    /* newBox_right */
+    .newBox_right{
+        width:564px;
+        float: left;
+        margin-left:94px;
+    }
+    .newBox_right ul{
+        padding:0 11px;
+        padding-right:100px;
+        float: left;
+    }
+    .newBox_right ul p{
+        font-size:14px;
+        line-height:22px;
+        color:#808080;
+    }
+    .newBox_right ul a{
+        font-size:18px;
+        line-height:30px;
+        color:#282828;
+    }
+    .newBox_right ul li{
+        padding-top:60px;
+    }
+    .newBox_right a:hover{
+        text-decoration: underline;
+    }
+/* ----------------------------------------------------------------- */
+/* footer */
+    .footerBox{
+        max-width:1128px;
+        margin:0 auto;
+        background:#f0f0f0;
+        padding-top:60px;
+    }
+    .footerBox a{
+        color:#282828;
+    }
+    .footerBox li{
+        font-size:16px;
+        padding-bottom:15px;
+    }
+    .footerBox h3 a{
+        display: block;
+        font-size:22px;
+        padding-bottom:10px;
+    }
+    .footerBox_top{
+        width:1128px;
+        height:307px;
+    }
+    .footerBox_top ul{
+        float: left;
+        padding:0 11px;
+        width:260px;
+    }
+    .footerBox_top .ul_pic img{
+        width:25px;
+        height:25px;
+        margin-bottom:5px;
+    }
+
+    .footerBox_top span{
+        display: block;
+        float: left;
+    }
+    .footerBox_top .footerPic{
+        width:30px;
+        height:30px;
+        padding-left:3px;
+    }
+    .footerBox_top a:hover{
+        text-decoration: underline;
+    }
+    .footerBox_top span:hover{
+        text-decoration: underline;
+    }
+    .footerBox_top h3:hover .footerPic{
+        padding-left:10px;
+        transition:.1s;
+    }
+    .footerBox_top .jszc h3{
+        margin-bottom:16px;
+    }
+    .footerBox_top .jszc li{
+        height:21px;
+    }
+    .footerBox_top .jszc li a{
+        float: left;
+    }
+    .footerBox_top .jszc li img{
+        width:20px;
+        height:20px;
+        margin-left:5px;
+        float: left;
+        display:none;
+    }
+    .footerBox_top .jszc h3 a:hover{
+        text-decoration: none;
+    }
+    .footerBox_top .jszc li:hover img{
+        display:block;
+    }
+    .footerBox_top .jszc li:hover{
+        cursor: pointer;
+    }
+
+
+
+    .footerBox_bottom{
+        max-width:1128px;
+        padding-bottom:80px;
+    }
+    .footerBox_bottom .text_one{
+        overflow: hidden;
+    }
+    .footerBox_bottom h3{
+        font-size:22px;
+        margin:20px 11px 30px 11px;
+    }
+    .footerBox_bottom ul li{
+        width:260px;
+        padding-left: 11px;
+        padding-right:11px;
+        display: block;
+        float: left;
+    }
+    .footerBox_bottom .text_one ul a{
+        display: block;
+        margin-right:7px;
+        float: left;
+    }
+    .footerBox_bottom .text_one img{
+        width:20px;
+        height:20px;
+        float: left;
+        display: none;
+    }
+    .footerBox_bottom .text_one ul li:hover img{
+        display: block;
+    }
+    .footerBox_bottom .text_one ul li:hover{
+        cursor: pointer;
+    }
+    .footerBox_bottom .text_one ul li:hover a{
+        text-decoration: underline;
+    }
+/* ----------------------------------------------------------------------- */
+    footer{
+        max-width:1128px;
+        background-color:#000;
+        font-size:14px;
+        line-height:40px;
+        margin:0 auto;
+        color:#fff;
+        overflow: hidden;
+    }
+    footer .footerLeft{
+        padding:0 11px;
+        height:40px;
+        float:left;
+    }
+    footer .footerRight{
+        padding:0 11px;
+        height:40px;
+        float:right;
+    }
+    footer a{
+        color:#fff;
+    }
+    footer a:hover{
+        text-decoration: underline;
+    }
+
+
+

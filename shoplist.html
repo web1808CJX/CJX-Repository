@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为商城（VMALLCOM）_华为</title>
+    <link rel="stylesheet" href="css/shoplist.css">
+    <style>
+        .focusBox { position: relative; width:1903px; height:550px; overflow: hidden; }
+        .focusBox .pic img { width:1905px; height:550px; display: block; }
+        .focusBox .hd { overflow:hidden; zoom:1; position:absolute; bottom:10px; right:380px; z-index:3}
+        .focusBox .hd li{float:left; line-height:15px; text-align:center; font-size:12px; width:10px; height:10px;border-radius:50%; cursor:pointer; overflow:hidden;border:1px solid #fff; margin-left:4px; filter:alpha(opacity=80); opacity:.8; -webkit-transition:All .5s ease;-moz-transition:All .5s ease;transition:All .5s ease }
+        .focusBox .hd .on{ background:#fff; filter:alpha(opacity=100);opacity:1;   }
+
+        .focusBox .prev,
+        .focusBox .next { width:45px; height:99px; position:absolute; top:200px; z-index:3; filter:alpha(opacity=20); -moz-opacity:.2; opacity:.2; -webkit-transition:All .5s ease;-moz-transition:All .5s ease;transition:All .5s ease}
+        .focusBox .prev { background-image:url(img/shoplist_img/index.png); background-position:-112px 0; left:570px }
+        .focusBox .next { background-image:url(img/shoplist_img/index.png); background-position:-158px 0; right:370px }
+        .focusBox .prev:hover,
+        .focusBox .next:hover { filter:alpha(opacity=60); -moz-opacity:.6; opacity:.6 }
+    </style>
+</head>
+<body>
+<!-- navTop -->
+<div class="zsy_one">
+    <div class="navTop">
+        <div class="navTop_left">
+            <ul>
+                <li style="padding-left:0px;"><a href="">首页</a><span></span></li>
+                <li><a href="">华为官网</a><span></span></li>
+                <li><a href="">荣耀官网</a><span></span></li>
+                <li><a href="">花粉俱乐部</a><span></span></li>
+                <li><a href="">V码(优购码)</a><span></span></li>
+                <li><a href="">企业购</a><span></span></li>
+                <li><a href="">Select Region</a></li>
+            </ul>
+        </div>
+        <div class="navTop_right">
+            <ul>
+                <li style="padding-left:0px;">
+                    <div class="loginReg">
+                        <a href="">请登录</a>
+                        <a href="">注册</a>
+                    </div>
+                    <span></span>
+                </li>
+                <li><a href="">我的订单</a><span></span></li>
+                <li class="navTop_xl">
+                    <a href="">客户服务</a>
+                    <div class="navTop_jt">
+                        <img id="navTop_top_jt" style="display:none;" src="img/shoplist_img/navTop_top_jt.png" alt="">
+                        <img id="navTop_bottom_jt" src="img/shoplist_img/navTop_bottom_jt.png" alt="">
+                    </div>
+                    <ul class="navTop_xl_one">
+                        <li><a href="">帮助中心</a></li>
+                        <li><a href="">联系客服</a></li>
+                    </ul>
+                </li>
+                <li class="navTop_xl">
+                    <span></span>
+                    <a href="">网站导航</a>
+                    <div class="navTop_jt">
+                        <img id="navTop_top_jt" style="display:none;" src="img/shoplist_img/navTop_top_jt.png" alt="">
+                        <img id="navTop_bottom_jt" src="img/shoplist_img/navTop_bottom_jt.png" alt="">
+                    </div>
+                    <ul class="navTop_xl_two">
+                        <div class="xl_shop_index">
+                            <div class=shop_index>
+                                <img src="img/shoplist_img/shop_index.png" alt="">
+                            </div>
+                            <p><a href="">商城首页</a></p>
+                        </div>
+                        <dl>
+                            <dt>频道</dt>
+                            <dd>
+                                <a href="">华为专区</a>
+                                <a href="">荣耀专区</a>
+                                <a href="">企业购</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>产品</dt>
+                            <dd>
+                                <a href="">手机</a>
+                                <a href="">智能家居</a>
+                                <a href="">平板&笔记本</a>
+                                <a href="">通用配件</a>
+                                <a href="">智能穿戴</a>
+                                <a href="">专属配件</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>增值服务</dt>
+                            <dd>
+                                <a href="">以旧换新</a>
+                                <a href="">礼品包装</a>
+                                <a href="">补购保障</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>会员</dt>
+                            <dd>
+                                <a href="">会员频道</a>
+                            </dd>
+                        </dl>
+                    </ul>
+                </li>
+                <li class="navTop_xl">
+                    <span></span>
+                    <a href="">手机版</a>
+                </li>
+                <li style="background:#f2f2f2;">
+                    <img id="shop_gwc" src="img/shoplist_img/shop_gwc.png" alt="">
+                    <a href="">购物车(0)</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- navHeader -->
+<div class="zsy_two">
+    <div class="navHeader">
+        <div class="navHeader_left">
+            <a href="shoplist.html">
+                <img class="shoplist_logo" src="img/shoplist_img/shoplist_logo.png" alt="">
+            </a>
+            <div class="smallBox">
+                <img src="img/shoplist_img/shopHeader_one.png" alt="">
+                <img src="img/shoplist_img/shopHeader_two.png" alt="">
+                <a href="">Mata 20系列</a>
+                <a href="">荣耀10</a>
+                <a href="">P20系列</a>
+                <a href="">荣耀V10</a>
+            </div>
+        </div>
+        <div class="navHeader_right">
+            <input type="text" placeholder="HUAWEI Mate20">
+            <button><img src="img/shoplist_img/shoplist_search.png" alt=""></button>
+        </div>
+    </div>
+</div>
+<!-- 轮播图 -->
+<div class="lunbotu">
+    <div class="focusBox" style="margin:0 auto">
+			<ul class="pic">
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_01.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_02.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_03.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_04.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_05.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_06.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_07.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_08.jpg"/></a></li>
+					<li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/shoplist_img/lunbotuPic_09.jpg"/></a></li>
+			</ul>
+			<a class="prev" href="javascript:void(0)"></a>
+			<a class="next" href="javascript:void(0)"></a>
+			<ul class="hd">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+	</div>
+    <div class="lunbotu_charu">
+        <dl>
+            <dt><a href="">手机</a></dt>
+            <dd>
+                <a href=""><span>荣耀</span></a>
+                <a href=""><span>HUAWEI P系列</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+        <p style="width:150px;height:1px;background:#f1f1f1;margin-left:25px;"></p>
+        <dl>
+            <dt><a href="">笔记本&平板</a></dt>
+            <dd>
+                <a href=""><span>平板电脑</span></a>
+                <a href=""><span>笔记本电脑</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+        <p style="width:150px;height:1px;background:#f1f1f1;margin-left:25px;"></p>
+        <dl>
+            <dt><a href="">智能穿戴</a></dt>
+            <dd>
+                <a href=""><span>手环</span></a>
+                <a href=""><span>手表</span></a>
+                <a href=""><span>VR</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+        <p style="width:150px;height:1px;background:#f1f1f1;margin-left:25px;"></p>
+        <dl>
+            <dt><a href="">智能家居</a></dt>
+            <dd>
+                <a href=""><span>路由器</span></a>
+                <a href=""><span>电视盒子</span></a>
+                <a href=""><span>照明</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+        <p style="width:150px;height:1px;background:#f1f1f1;margin-left:25px;"></p>
+        <dl>
+            <dt><a href="">通用配件</a></dt>
+            <dd>
+                <a href=""><span>移动电源</span></a>
+                <a href=""><span>耳机</span></a>
+                <a href=""><span>音箱</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+        <p style="width:150px;height:1px;background:#f1f1f1;margin-left:25px;"></p>
+        <dl>
+            <dt><a href="">专属配件</a></dt>
+            <dd>
+                <a href=""><span>保护壳</span></a>
+                <a href=""><span>保护套</span></a>
+                <a href=""><span>贴膜</span></a>
+            </dd>
+            <ul>
+
+            </ul>
+        </dl>
+    </div>
+</div>
+<!-- shopList -->
+<div class="zsy_three">
+    <div class="shopList">
+        <h2>热销单品</h2>
+        <div class="shopPic"><img src="img/shoplist_img/hotOne.png" alt=""></div>
+        <div class="shopText">
+            <a href="shopmore.html" target="_blank">
+                <div class="shopBox">
+                        <img src="img/shoplist_img/hotOne_01.png" alt="">
+                        <p>荣耀10</p>
+                        <p>显示优惠500 积分翻倍</p>
+                        <p>￥2199</p>
+                        <p>热卖</p>
+                </div>
+            </a>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">手机</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">荣耀</a></li>
+                <li><a href="">HUAWEI P系列</a></li>
+                <li><a href="">荣耀畅玩系列</a></li>
+                <li><a href="">HUAWEI Mate系列</a></li>
+                <li><a href="">HUAWEI Nova系列</a></li>
+                <li><a href="">华为畅享系列</a></li>
+                <li><a href="">HUAWEI 麦芒系列</a></li>
+                <li><a href="">移动4G+专区</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img src="img/shoplist_img/phoneOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/phoneOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/phoneOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/phoneOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/phoneOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_09.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_10.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_11.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_12.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_13.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/phoneOne_14.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">笔记本电脑</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">平板电脑</a></li>
+                <li><a href="">笔记本电脑</a></li>
+                <li><a href="">笔记本配件</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img src="img/shoplist_img/computerOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/computerOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/computerOne_02.jpg" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/computerOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/computerOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/computerOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/computerOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/computerOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/computerOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/computerOne_09.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">精品平板</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">平板电脑</a></li>
+                <li><a href="">笔记本电脑</a></li>
+                <li><a href="">笔记本配件</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img src="img/shoplist_img/pingComputerOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/pingComputerOne_09.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">智能穿戴</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">手环</a></li>
+                <li><a href="">手表</a></li>
+                <li><a href="">VR</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img style="width:472px;height:290px;" src="img/shoplist_img/watchOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/watchOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/watchOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/watchOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/watchOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/watchOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/watchOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/watchOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/watchOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">智能家居</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">路由器</a></li>
+                <li><a href="">子母/分布式路由器</a></li>
+                <li><a href="">电力猫</a></li>
+                <li><a href="">随行wifi</a></li>
+                <li><a href="">电视盒子</a></li>
+                <li><a href="">照明</a></li>
+                <li><a href="">清洁</a></li>
+                <li><a href="">节能</a></li>
+                <li><a href="">环境</a></li>
+                <li><a href="">安防</a></li>
+                <li><a href="">健康</a></li>
+                <li><a href="">厨电</a></li>
+                <li><a href="">影音</a></li>
+                <li><a href="">卫浴</a></li>
+                <li><a href="">其他</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img style="width:472px;height:290px;" src="img/shoplist_img/homeOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/homeOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/homeOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/homeOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/homeOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/homeOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/homeOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/homeOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/homeOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="homeLifeOne">
+        <a href="https://sale.vmall.com/vmallsmarthome.html"><img src="img/shoplist_img/homeLifeOne.jpg" alt=""></a>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">热销配件</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">移动电源</a></li>
+                <li><a href="">耳机</a></li>
+                <li><a href="">充电线/线材</a></li>
+                <li><a href="">自拍杆/支架</a></li>
+                <li><a href="">取卡针</a></li>
+                <li><a href="">U盘/存储卡</a></li>
+                <li><a href="">摄像头/镜头</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">生活周边</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img style="width:472px;height:290px;" src="img/shoplist_img/hotPartsOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/hotPartsOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="shopList">
+        <div style="width:1200px;height:45px;overflow:hidden;margin-bottom:-30px;">
+            <h2 class="phoneList_h2">品牌配件</h2>
+            <ul class="phoneList_ul">
+                <li><a href="">移动电源</a></li>
+                <li><a href="">耳机</a></li>
+                <li><a href="">充电线/线材</a></li>
+                <li><a href="">自拍杆/支架</a></li>
+                <li><a href="">取卡针</a></li>
+                <li><a href="">U盘/存储卡</a></li>
+                <li><a href="">摄像头/镜头</a></li>
+                <li><a href="">智能硬件</a></li>
+                <li><a href="">生活周边</a></li>
+            </ul>
+            <div class="phoneList_more"><a href="">查看更多<img src="img/shoplist_img/black_small_right_jt.png" alt=""></a></div>
+        </div>
+        <div class="shopText">
+            <div class="phoneOne">
+                <img style="width:472px;height:290px;" src="img/shoplist_img/brandPartsOne.png" alt="">
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_01.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_02.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_03.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;margin-left:0;" class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_04.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_05.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_06.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_07.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+            <div style="margin-top:12px;" class="shopBox">
+                <img src="img/shoplist_img/brandPartsOne_08.png" alt="">
+                <p>荣耀10</p>
+                <p>显示优惠500 积分翻倍</p>
+                <p>￥2199</p>
+                <p>热卖</p>
+            </div>
+        </div>
+    </div>
+    <div class="newPeopleOne">
+        <a href="https://sale.vmall.com/welcome.html"><img src="img/shoplist_img/newPeopleOne.jpg" alt="新人频道" title="新人频道"></a>
+    </div>
+</div>
+<!-- bottom -->
+<div class="zsy_bottom">
+    <div class="bottomBox">
+        <div class="bottomBoxOne">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/shoplist_img/bottomOne_01.png" alt="">
+                        <span>百强企业 品质保证</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shoplist_img/bottomOne_02.png" alt="">
+                        <span>7天退货 15天换货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shoplist_img/bottomOne_03.png" alt="">
+                        <span>48元起免运费</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/shoplist_img/bottomOne_04.png" alt="">
+                        <span>1000家维修网点 全国联保</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottomBoxTwo">
+            <div class="bottomBoxTwo_left">
+                <ul>
+                    <p>购物相关</p>
+                    <li><a href="">购物指南</a></li>
+                    <li><a href="">配送方式</a></li>
+                    <li><a href="">支付方式</a></li>
+                    <li><a href="">常见问题</a></li>
+                </ul>
+                <ul>
+                    <p>保修与退换货</p>
+                    <li><a href="">保修政策</a></li>
+                    <li><a href="">退换货政策</a></li>
+                    <li><a href="">退换货流程</a></li>
+                    <li><a href="">保修状态查询</a></li>
+                    <li><a href="">配件防伪查询</a></li>
+                </ul>
+                <ul>
+                    <p>维修与技术支持</p>
+                    <li><a href="">售后网点</a></li>
+                    <li><a href="">预约维修</a></li>
+                    <li><a href="">手机寄修</a></li>
+                    <li><a href="">备件价格查询</a></li>
+                    <li><a href="">上门服务</a></li>
+                </ul>
+                <ul>
+                    <p>特色服务</p>
+                    <li><a href="">防伪查询</a></li>
+                    <li><a href="">补购保障</a></li>
+                    <li><a href="">以旧换新</a></li>
+                    <li><a href="">礼品包装</a></li>
+                </ul>
+                <ul>
+                    <p>关于我们</p>
+                    <li><a href="">公司介绍</a></li>
+                    <li><a href="">华为商城简介</a></li>
+                    <li><a href="">华为线下门店</a></li>
+                    <li><a href="">荣耀线下门店</a></li>
+                    <li><a href="">诚征英才</a></li>
+                    <li><a href="">意见反馈</a></li>
+                </ul>
+                <ul>
+                    <p>友情链接</p>
+                    <li><a href="">华为集团</a></li>
+                    <li><a href="">华为CBG官网</a></li>
+                    <li><a href="">荣耀官网</a></li>
+                    <li><a href="">花粉俱乐部</a></li>
+                    <li><a href="">网站地图</a></li>
+                </ul>
+            </div>
+            <div class="bottomBoxTwo_right">
+                <p>400-088-6888</p>
+                <p>7×24小时客服热线(仅收市话费)</p>
+                <a class="unlineSever" href=""><img src="img/shoplist_img/bottom_kefu.png" alt="">在线客服</a>
+                <p>
+                    <span>关注Vmall:</span>
+                    <a href=""><img src="img/ul_li_03.png" alt=""></a>
+                    <a href=""><img src="img/ul_li_04.png" alt=""></a>
+                    <a href=""><img src="img/ul_li_01.png" alt=""></a>
+                    <a href=""><img src="img/shoplist_img/login_huawei.png" alt=""></a>
+                </p>
+            </div>
+        </div>
+        <div class="bottomBoxThree">
+            <p class="img_left"><img src="img/shoplist_img/logo_VMALL.png" alt=""></p>
+            <div class="bottomBoxText">
+                <p>
+                    <a href="">华为集团 </a>|
+                    <a href=""> 华为CBG官网 </a>|
+                    <a href=""> 荣耀官网 </a>|
+                    <a href=""> 花粉俱乐部 </a>|
+                    <a href=""> 华为应用市场 </a>|
+                    <a href=""> EMUI </a>|
+                    <a href=""> 华为终端云空间 </a>|
+                    <a href=""> 开发者联盟 </a>|
+                    <a href=""> 华为商城手机版 </a>|
+                    <a href=""> 网站地图</a>
+                </p>
+                <p>
+                    <a href="">隐私声明 </a>
+                    <a href="">服务协议 </a>
+                    Copyright &copy; 2012-2018 华为软件技术有限公司 版权所有 保留一切权利
+                </p>
+                <p>
+                    公安备案
+                    <a href=""> 苏公网安备32011402010009号 </a>|
+                    <a href=""> 苏ICP备17040376号-6</a>
+                </p>
+                <p>
+                    增值电信业务经营许可证：苏B2-20130048号 |
+                    <a href=""> 网络文化经营许可证：苏网文[2015] 1599-026号</a>
+                </p>
+            </div>
+            <p class="bottomBoxImg">
+                <a href=""><img src="img/shoplist_img/bottomBox_01.jpg" alt=""></a>
+                <a href=""><img src="img/shoplist_img/bottomBox_02.png" alt=""></a>
+                <a href=""><img src="img/shoplist_img/bottomBox_03.png" alt=""></a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+    jQuery(".focusBox").slide({ mainCell:".pic",effect:"left", autoPlay:true, delayTime:300});
+</script>

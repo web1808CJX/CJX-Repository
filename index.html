@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为-构造万物互联的智能世界</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/indexNav.css">
+    <style>
+        .focusBox { position: relative; width:1366px; height:558px; overflow: hidden; }
+        .focusBox .pic{ position:relative; z-index:0; }
+        .focusBox .pic img { width:1366px; height:558px; display: block; }
+        .focusBox .hd { width:100%; position: absolute; bottom: 110px; right:-1170px; font-size:0; z-index:1; }
+        .focusBox .hd li{margin: 0 5px; background: url(img/dot.png) no-repeat 0 -16px; height: 16px; overflow: hidden; width: 16px; cursor: pointer;
+            display:inline-block; *display:inline; zoom:1;  background: url(img/dot8.png) no-repeat 0 -16px;}
+        .focusBox .hd .on{ background-position:0 0; }
+
+        .focusBox .prev,
+        .focusBox .next { width: 60px; height: 90px; margin: -60px 0 0; display: none; background: url(img/ad_ctr.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; filter:alpha(opacity=20);opacity:0.2;  }
+        .focusBox .prev { left: 0; }
+        .focusBox .next { background-position: 0 -90px; right: 0; }
+        .focusBox .prev:hover,
+        .focusBox .next:hover { filter:alpha(opacity=50) !important;opacity:0.5 !important;  }
+    </style>
+</head>
+<body>
+<!-- nav导航栏 -->
+<div class="zsy_one">
+    <div class="navBox_one">
+        <div class="navLeft">
+            <a id="navLeft">
+                <span>集团网站</span>
+                <img id="bottom_jt" src="img/bottom_jt.png" alt="">
+                <img id="top_jt" src="img/top_jt.png" alt="" style="display:none;">
+            </a>
+        </div>
+        <div class="navRight">
+            <a id="navRight">
+                <img src="img/earth.png" alt="">
+                <b>选择区域/语言</b>
+                <img id="bottom_jt1" src="img/bottom_jt.png" alt="">
+                <img id="top_jt1" src="img/top_jt.png" alt="" style="display:none;">
+            </a>
+            <a class="login" href="log.html" target="_blank">
+                <img src="img/lock.png" alt="">
+                <b>登录</b>
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div id="jtwz_xl" class="jtwz" style="display:none;">
+        <ul>
+            <li>
+                <h3>集团网站</h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </li>
+            <li>
+                <h3><a href="">个人用户</a><img src="img/orang_right_jt.png" alt=""></h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </li>
+            <li>
+                <h3><a href="">企业用户</a><img src="img/orang_right_jt.png" alt=""></h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </li>
+            <li>
+                <h3><a href="">运营商用户</a><img src="img/orang_right_jt.png" alt=""></h3>
+                <p>公司信息，社会责任，新闻，展会活动，行业洞察等等</p>
+            </li>
+        </ul>
+    </div>
+    <div id="language_xl" class="language" style="display:none;"> 
+        <div><img src="img/black_earth.png" alt="">Huawei Global - <a href="">English</a></div>
+        <div>
+            <ul>
+                <li>Australia - <a href="">English</a></li>
+                <li>Belarus - <a href="">Pусский</a></li>
+                <li>Brazil - <a href="">Portuguese</a></li>
+                <li>Canada - <a href="">English</a></li>
+                <li>China - <a href="">简体中文</a></li>
+                <li>Germany - <a href="">Deutsch</a></li>
+                <li>Japan - <a href="">日本語</a></li>
+                <li>Kazakstan - <a href="">русский</a></li>
+                <li>Malaysia - <a href="">English</a></li>
+                <li>Mexico - <a href="">Español</a></li>
+                <li>Myanmar - <a href="">ျမန္မာ</a></li>
+                <li>Russia - <a href="">русский</a></li>
+                <li>South Africa - <a href="">English</a></li>
+                <li>Spain - <a href="">Español</a></li>
+                <li>Switzerland - <a href="">English</a></li>
+                <li>Thailand - <a href="">ภาษาไทย</a></li>
+                <li>Turkey - <a href="">Türkiye</a></li>
+                <li>United Kingdom - <a href="">English</a></li>
+                <li>United States - <a href="">English</a></li>
+                <li>Uzbekistan - <a href="">русский</a></li>
+                <li>Vietnam - <a href="">Tiếng Việt</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- logo -->
+<div class="zsy_two">
+    <header>
+        <div class="login">
+            <img src="img/huawei_logo.png" alt="">
+        </div>
+        <ul>
+            <li id="nav_one">
+                <span class="picZh1"><img src="img/pic_zh.png" alt=""></span>
+                <a>手机、笔记本&平板…<img id="navBottom_jt_01" src="img/bottom_jt1.png" alt=""><img id="navTop_jt_01" style="display:none;" src="img/top_jt1.png" alt=""></a>
+            </li>
+            <li id="nav_two">
+                <span class="picZh2"><img src="img/pic_zh.png" alt=""></span>
+                <a>解决方案&服务<img id="navBottom_jt_02" src="img/bottom_jt1.png" alt=""><img id="navTop_jt_01" style="display:none;" src="img/top_jt1.png" alt=""></a>
+            </li>
+        </ul>
+        <div class="xhx"></div>
+        <ul class="ulSecond">
+            <li>
+                <a href="shoplist.html" target="_blank">华为商城<span><img src="img/dong_a.png" alt=""><img class="loding_jt" src="img/dong_b.png" alt=""></span></a>
+            </li>
+            <li>
+                <a href="">华为云<span><img src="img/dong_a.png" alt=""><img class="loding_jt" src="img/dong_b.png" alt=""></span></a>
+            </li>
+        </ul>
+        <div class="search">
+            <a href=""><img src="img/search.png" alt=""></a>
+        </div>
+    </header>
+</div>
+<div id="navXL_box" class="navXL_box">
+    <div class="navBigBox">
+        <div id="navOne" class="navOne">
+            <div class="textBox_xl" style="width: 282px;min-height:326px;">
+                <img style="padding-bottom:40px;" src="img/navBox_xl.jpg" alt="">
+                <div class="navMore">
+                    <p>了解更多<img src="img/white_small_right.png" alt=""></p>
+                </div>
+            </div>
+            <div class="textBox_xl">
+                <div class="text_xl">
+                    <a href="">
+                        <em class="em_01" style="display:block;width:45px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>手机<img src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <a href="">
+                        <em class="em_02" style="display:block;width:73px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>PC<img style="left:95px;" src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <a href="">
+                        <em class="em_03" style="display:block;width:56px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>平板<img src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <a href="">
+                        <em class="em_04" style="display:block;width:29px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>穿戴<img src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <a href="">
+                        <em class="em_05" style="display:block;width:56px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>配件<img src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <a href="">
+                        <em class="em_06" style="display:block;width:56px;height:54px;background-image:url(img/pic_zh.png);"></em>
+                        <p>智能家居<img style="left:115px;" src="img/loding_black.png" alt=""></p>
+                    </a>
+                    <span>前往 <b>consumer.huawei.com</b> 查看全部产品<img src="img/loding_black.png" alt=""></span>
+                </div>
+            </div>
+            <div class="textBox_xl">
+                <div class="severy">
+                    <h3>需要技术支持？</h3>
+                    <ul>
+                        <li><a href="">寄修服务<img src="img/loding_black.png" alt=""></a></li>
+                        <li><a href="">预约服务<img src="img/loding_black.png" alt=""></a></li>
+                        <li><a href="">保修状态查询<img src="img/loding_black.png" alt=""></a></li>
+                        <li><a href="">保修政策<img src="img/loding_black.png" alt=""></a></li>
+                    </ul>
+                    <a class="aa" href="">访问  <span>技术支持中心</span><img src="img/loding_black.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="navTwo">
+
+        </div> -->
+    </div>
+</div>
+<!-- 轮播图 -->
+<div class="zsy_three">
+    <div class="bigPic">
+        <div id="box">
+            <div class="focusBox" style="margin:0 auto">
+                <ul class="pic">
+                        <li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/hero_banner_vmall_pc.jpg"/></a></li>
+                        <li><a href="http://www.SuperSlide2.com" target="_blank"><img src="img/hbanner-allflash-storage-pc.jpg"/></a></li>
+                </ul>
+                <a class="prev" href="javascript:void(0)"></a>
+                <a class="next" href="javascript:void(0)"></a>
+                <ul class="hd">
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="smallPic">
+        <div class="userBox">
+            <a href="">
+                <img src="img/nav_mate20pro_cn.png" alt="">
+                <div class="everUser">
+                    <h3>个人用户</h3>
+                    <p>手机，PC和平板，穿戴设备等个人及家用产品</p>
+                </div>
+            </a>
+        </div>
+        <div class="userBox">
+            <a href="">
+                <img src="img/banner-nav-img02.png" alt="">
+                <div class="everUser">
+                    <h3>企业用户</h3>
+                    <p>企业商用产品、解决方案及云服务</p>
+                </div>
+            </a>
+        </div>
+        <div class="userBox">
+            <a href="" style="border:none;">
+                <img src="img/banner-nav-img03.png" alt="">
+                <div class="everUser">
+                    <h3>运营商用户</h3>
+                    <p>运营商网络解决方案、产品及服务</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- morePhone -->
+<div class="zsy_four">
+    <div class="phoneBox">
+        <div class="phonebox_left">
+            <div class="text_one">
+                <img src="img/morePhone_01.png" alt="">
+                <span>了解更多</span>
+                <img class="jt" src="img/white_right_jt.png" alt="">
+                <p>*图片仅供参考，请以实物为准</p>
+            </div>
+            <img class="ponePic_one" src="img/morePhone_02.png" alt="">
+            <img class="ponePic_two" src="img/morePhone_03.png" alt="">
+        </div>
+        <div class="phonebox_right">
+            <img src="img/morePhone_04.jpg" alt="">
+            <div class="text_two">
+                <span>发言</span>
+                <h2>华为轮值董事长胡厚崑：5G启领未来，构建万物互联的智能世界</h2>
+                <p>了解更多</p>
+                <img src="img/black_right_jt.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- video -->
+    <div id="videoPlay" class="phoneVideo">
+        <div class="text_three"><h2>把数字世界带入每个人、每个家庭、每个组织，构建万物互联的智能世界</h2></div>
+        <div class="videoGo">
+            <div class="video_go">
+                <img src="img/video.png" alt="">
+            </div>
+            <div class="video_go_zgc"></div>
+        </div>
+    </div>
+    <video id="videoPlay_ok" controls autoplay width="1106px";height="622px";>
+        <source src="img/index_video_01.mp4" type="video/mp4">
+    </video>
+</div>
+<!-- 展会活动 -->
+<div class="zsy_five">
+    <div class="showActive">
+        <div class="showActive_top">
+            <h2>展会活动</h2>
+            <a href="">
+                <span>查看全部</span>
+                <img src="img/right_jt.png" alt="">
+            </a>
+        </div>
+        <div class="showActive_bottom">
+            <div class="showActiveText">
+                <p>展会活动</p>
+                <h3>2018全球移动宽带论坛</h3>
+                <span>英国 伦敦|2018年11月19-21日</span>
+                <p class="text">由华为主办的第九届全球移动宽带论坛，携手产业合作伙伴GSMA与GTI，将邀请全球运营商客户、监管机构、垂直行业伙伴，以及媒体和分析师齐聚一堂，共议移动产业发展之道。</p>
+                <a>
+                    <span>了解更多</span>
+                    <img src="img/black_right_jt.png" alt="">
+                </a>
+            </div>
+            <img class="showActivePic" src="img/show_active_01.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- 成功故事 -->
+<div class="zsy_six">
+    <div class="successStory">
+        <div class="showActive_top">
+            <h2>成功故事</h2>
+            <a href="">
+                <span>查看全部</span>
+                <img src="img/right_jt.png" alt="">
+            </a>
+        </div>
+        <div class="successStory_text">
+            <div class="successStory_text_box">
+                <div class="successStory_text_more">
+                    <p>商业故事</p>
+                    <h3>探寻百年驾驶乐趣的源动力</h3>
+                    <a>更多<span><img class="storyPic_jt" src="img/dong_b.png" alt=""><img src="img/dong_a.png" alt=""><span></a>
+                </div>
+                <img class="storyPic" src="img/successStory_01.jpg" alt="">
+            </div>
+            <div class="successStory_text_box">
+                <div class="successStory_text_more">
+                    <p>商业故事</p>
+                    <h3>工银亚洲：以前沿科技驱动跨境金融升级发展</h3>
+                    <span class="storyMore">更多 <img src="img/black_right_jt.png" alt=""></span>
+                </div>
+                <img class="storyPic" src="img/successStory_02.jpg" alt="">
+            </div>
+            <div class="successStory_text_box">
+                <div class="successStory_text_more">
+                    <p>商业故事</p>
+                    <h3>华为借助云计算和人工智能的数字化转型实践</h3>
+                    <a>更多<span><img class="storyPic_jt" src="img/dong_b.png" alt=""><img src="img/dong_a.png" alt=""><span></a>
+                </div>
+                <img class="storyPic" src="img/successStory_03.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 近期新闻 -->
+<div class="zsy_seven">
+    <div class="news">
+        <div class="showActive_top">
+            <h2>近期新闻</h2>
+            <a href="">
+                <span>查看全部</span>
+                <img src="img/right_jt.png" alt="">
+            </a>
+        </div>
+        <div class="newsBox">
+            <div class="newsBox_left">
+                <img class="newsOne" src="img/news_01.jpg" alt="">
+                <div class="newsBox_more">
+                    <p>新闻|2018年11月20日</p>
+                    <h3>5G启领未来，构建万物互联的智能世界</h3>
+                    <span>更多<img src="img/black_right_jt.png" alt=""></span>
+                </div>
+            </div>
+            <div class="newBox_right">
+                <ul>
+                    <p>新闻|2018年12月05日</p>
+                    <a href="">英特尔和华为成功完全球首个2.6GHz频段基于3GPP标准SA架构的5G互操作性测试</a>
+                    <li>
+                        <p>新闻|2018年12月05日</p>
+                        <a href="">华为5G LampSite率先完成中国5G技术研发试验第三阶段SA测试</a>
+                    </li>
+                    <li>
+                        <p>新闻|2018年11月29日</p>
+                        <a href="">华为在中东北非移动360大会上分享：5G将带来五大变化</a>
+                    </li>
+                    <li>
+                        <p>新闻|2018年11月29日</p>
+                        <a href="">TechCity 2019，华为将携手全球运营商加速构建5G City</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<div class="zsy_eight">
+    <div class="footerBox" style="overflow: hidden;">
+        <div class="footerBox_top">
+            <ul>
+                <h3><li><a href=""><span>关于华为</span><img class="footerPic" src="img/right_jt.png" alt=""></a></li></h3>
+                <li><a href="">公司简介</a></li>
+                <li><a href="">公司治理</a></li>
+                <li><a href="">管理层信息</a></li>
+                <li><a href="">可持续发展</a></li>
+                <li><a href="">网络安全</a></li>
+                <li><a href="">债券投资者关系</a></li>
+                <li><a href="">出版物</a></li>
+            </ul>
+            <ul>
+                <h3><li><a href=""><span>新闻&年会</span><img class="footerPic" src="img/right_jt.png" alt=""></a></li></h3>
+                <li><a href="">新闻</a></li>
+                <li><a href="">展会活动</a></li>
+                <li><a href="">公司年报</a></li>
+                <li><a href="">媒体工具</a></li>
+                <li><a href="">媒体联系</a></li>
+            </ul>
+            <ul>
+                <h3><li><a href=""><span>行业洞察</span><img class="footerPic" src="img/right_jt.png" alt=""></a></li></h3>
+                <li><a href="">行业研究</a></li>
+                <li><a href="">行业展望</a></li>
+                <li><a href="">热点技术</a></li>
+                <li><a href="">创新</a></li>
+            </ul>
+            <ul class="jszc" style="width:166px;">
+                <h3><a>技术支持</a></h3>
+                <li><a href="">消费者技术支持</a><img src="img/loding_black.png" alt=""></li>
+                <li><a href="">企业技术支持</a><img src="img/loding_black.png" alt=""></li>
+                <li><a href="">运营商技术支持</a><img src="img/loding_black.png" alt=""></li>
+                <li><a href="">安全通告</a></li>
+                <li><a href="">产品生命周期公告</a></li>
+            </ul>
+            <ul class="ul_pic" style="width:72px;">
+                <li><a href="https://passport.weibo.com"><img src="img/ul_li_01.png" alt=""></a></li>
+                <li><a href="https://www.linkedin.com"><img src="img/ul_li_02.png" alt=""></a></li>
+                <li><a href=""><img src="img/ul_li_03.png" alt=""></a></li>
+                <li><a href="https://www.toutiao.com"><img src="img/ul_li_04.png" alt=""></a></li>
+                <li><a href="https://www.zhihu.com"><img src="img/ul_li_05.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="footerBox_bottom" style="float:left;">
+            <div class="text_one">
+                <h3>业务入口</h3>
+                <ul>
+                    <li><a href="">招聘</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">开发者</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">合作伙伴</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">产品定义社区</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">供应商平台</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">除名查询</a><img src="img/loding_black.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="text_one">
+                <h3>相关网站</h3>
+                <ul>
+                    <li><a href="">华为商城</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">华为云</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">华为智能光伏</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">华为心声社区</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">华为海洋</a><img src="img/loding_black.png" alt=""></li>
+                    <li><a href="">荣耀官网</a><img src="img/loding_black.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 尾部 -->
+<div class="zsy_nine" style="float:left;">
+    <footer>
+        <div class="footerLeft">
+            <span>&copy;2018华为技术有限公司&nbsp;&nbsp;</span>
+            <a href="">粤A2-20044005号</a>
+        </div>
+        <div class="footerRight">
+            <a href="">联系我们</a>&nbsp;&nbsp;|&nbsp;
+            <a href="">法律声明</a>&nbsp;&nbsp;|&nbsp;
+            <a href="">隐私政策</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.source.js"></script>
+<script type="text/javascript">
+    jQuery(".focusBox").hover(function(){ jQuery(this).find(".prev,.next").stop(true,true).fadeTo("show",1) },function(){ jQuery(this).find(".prev,.next").fadeOut() });
+    /*SuperSlide图片切换*/
+    jQuery(".focusBox").slide({ mainCell:".pic",effect:"fold", autoPlay:true, delayTime:600, trigger:"click"});
+
+    
+    function $(id){
+        return document.getElementById(id);
+    }
+    $("videoPlay").onclick = function (){
+        document.getElementById("videoPlay").style.display="none";
+        document.getElementById("videoPlay_ok").style.display="block";
+    }
+
+
+
+
+    //集团网站下拉
+
+    $("navLeft").onmouseover = function (){
+        this.style.cursor="pointer";
+    }
+    $("navLeft").onclick = function (){
+        if($("jtwz_xl").offsetHeight==0){
+            $("bottom_jt").style.display="none";
+            $("top_jt").style.display="block";
+            $("jtwz_xl").style.display="block";
+            $("language_xl").style.display="none";
+            $("bottom_jt1").style.display="block";
+            $("top_jt1").style.display="none";
+        }else{
+            $("bottom_jt").style.display="block";
+            $("top_jt").style.display="none";
+            $("jtwz_xl").style.display="none";
+        }
+    }
+
+    //语言
+    $("navRight").onmouseover = function (){
+        this.style.cursor="pointer";
+    }
+    $("navRight").onclick = function (){
+        if($("language_xl").offsetHeight==0){
+            $("bottom_jt1").style.display="none";
+            $("top_jt1").style.display="block";
+            $("language_xl").style.display="block";
+            $("jtwz_xl").style.display="none";
+            $("bottom_jt").style.display="block";
+            $("top_jt").style.display="none";
+        }else{
+            $("bottom_jt1").style.display="block";
+            $("top_jt1").style.display="none";
+            $("language_xl").style.display="none";
+        }
+    }
+
+    //nav
+    // $("nav_one").onmouseover = function (){
+    //     this.style.cursor="pointer";
+    //     if($("navXL_box").offsetHeight==0){
+    //         $("navXL_box").style.display="block";
+    //     }else{
+    //         $("navXL_box").style.display="none";
+    //     }
+    // }
+</script>

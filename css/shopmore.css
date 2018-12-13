@@ -1,0 +1,621 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:none;
+    display:block;
+}
+ul{
+    list-style: none;
+}
+
+
+/* navTop */
+.zsy_one{
+    width:100%;
+    background:#f9f9f9;
+}
+.navTop{
+    max-width:1200px;
+    height:40px;
+    background:#f9f9f9;
+    margin:0 auto;
+    font-size:8px;
+    line-height:40px;
+}
+.navTop a{
+    color:#a4a4a4;
+}
+.navTop li{
+    float: left;
+}
+.navTop li a{
+    padding:0 8px;
+}
+.navTop span{
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#d3d3d3;
+}
+    /* .navTop_left */
+.navTop .navTop_left{
+    float: left;
+}
+    /* .navTop_right */
+.navTop .navTop_right{
+    float:right;
+}
+.navTop .navTop_right .loginReg{
+    float:left;
+}
+.navTop .navTop_right .loginReg a{
+    padding-left:0;
+}
+.navTop .navTop_right li{
+    float:left;
+}
+.navTop_right .navTop_jt{
+    margin-top:12px;
+    margin-left:-5px;
+    padding-right:3px;
+    float: right;
+}
+.navTop_right #shop_gwc{
+    margin-top:12px;
+    margin-left:10px;
+    margin-right:-5px;
+    float: left;
+}
+    /* nav下拉 */
+.navTop_xl ul{
+    z-index: 50;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.navTop_right .navTop_xl_one{
+    background:#fff;
+    position: absolute;
+    box-shadow:0 5px 20px 1px  #f1f1f1;
+}
+.navTop_right .navTop_xl_one li{
+    padding:0 7px;
+    clear: both;
+}
+.navTop_xl .navTop_xl_one{
+    display:none;
+}
+.navTop_right .navTop_xl:hover{
+    background:#fff;
+}
+.navTop_right ul li:hover .navTop_xl_one{
+    display:block;
+}
+
+.navTop_xl .navTop_xl_two{
+    width:893px;
+    height:162px;
+    background:#fff;
+    box-shadow:0 5px 20px 1px  #f1f1f1;
+    position: absolute;
+    left:506px;
+    display:none;
+}
+.xl_shop_index{
+    width:20%;
+    height:100px;
+    padding-top:4%;
+    float: left;
+}
+.xl_shop_index .shop_index{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#f7f7f7;
+    margin:0 auto;
+}
+.shop_index img{
+    padding-top:20%;
+    padding-left:20%;
+    width:30px;
+    height:30px;
+}
+.xl_shop_index{
+    text-align:center;
+    line-height:20px;
+}
+.navTop_xl_two dl{
+    width:20%;
+    float: left;
+}
+.navTop_xl_two dl dt{
+    padding-top:20%;
+    line-height:20px;
+    font-size:16px;
+    font-weight:bold;
+    color:#333;
+    margin-bottom:10px;
+}
+.navTop_xl_two dl dd a{
+    padding:0;
+    width:80px;
+    height:20px;
+    display:block;
+    float: left;
+    line-height: 20px;
+    margin-bottom:5px;
+}
+.navTop_right ul li:hover .navTop_xl_two{
+    display:block;
+}
+/* -------------------------------------------------------------------------------- */
+/* navHeader */
+.zsy_two{
+    width:100%;
+    background:#fff;
+}
+.navHeader{
+    max-width:1200px;
+    padding:18px 0 15px 0;
+    background:#fff;
+    margin:0 auto;
+    overflow: hidden;
+}
+.navHeader_left{
+    overflow: hidden;
+    float: left;
+}
+.navHeader_left .shoplist_logo{
+    width:205px;
+    height:36px;
+    margin-right:30px;
+    float: left;
+}
+.navHeader_left .smallBox{
+    height:40px;
+    float: left;
+}
+.navHeader_left .smallBox a{
+    display:block;
+    float: left;
+    font-size:16px;
+    line-height:38px;
+    margin-right:20px;
+    color:#000;
+}
+.navHeader_left .smallBox a:hover{
+    color:#ca141d;
+    border-bottom:2px solid #ca141d;
+}
+.navHeader_right{
+    width:322px;
+    height:37px;
+    float: right;
+    margin-right:20px;
+    position: relative;
+}
+.navHeader_right input{
+    width:322px;
+    height:30px;
+    border-radius:25px;
+    border:none;
+    outline:none;
+    text-indent:16px;
+    margin-top:3px;
+    background:#f5f5f5;
+}
+.navHeader_right button{
+    width:30px;
+    height:30px;
+    background:#666;
+    border:none;
+    outline:none;
+    border-radius:50%;
+    position: absolute;
+    top:3px;
+    right:0px;
+    cursor: pointer;
+}
+.navHeader_right button img{
+    width:12px;
+    height:12px;
+    margin-left:8px;
+}
+/* ---------------------------------------------------------------- */
+/* shopmore */
+.zsy_three{
+    width:100%;
+    background:#fbfbfb;
+}
+.shopmoreBox{
+    max-width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+    padding-bottom:25px;
+}
+    /* shopmoreBoxTop */
+.shopmoreBoxTop{
+    padding:5px 0;
+}
+.shopmoreBoxTop span{
+    font-size:12px;
+    line-height:40px;
+    color:#333;
+}
+.shopmoreBoxTop a{
+    display:block;
+    float: left;
+    color:#333;
+}
+.shopmoreBoxTop span img{
+    width:25px;
+    height:25px;
+    float: left;
+    margin:8px 5px 0;
+}
+    /* shopmoreBoxLeft */
+    /* ----------------------shopFdj--------------------- */
+.shopmoreBoxLeft{
+    float: left;
+}
+#shopFdj{
+    position:relative;
+    width:450px;
+    height:450px;
+    background-image:url(../img/shoplist_img/shopmoreFdj_01.png);
+    background-size:450px 450px;
+}
+#mirrorBox{
+    position:absolute;
+    left:50px;
+    top:50px;
+    width:200px;
+    height:200px;
+    background-color:#fff;
+    opacity:0.5;
+    border:1px solid #ccc;
+    display:none;
+}
+#showBox{
+    position:absolute;
+    left:450px;
+    top:0px;
+    width:400px;
+    height:400px;
+    background-image:url(../img/shoplist_img/shopmoreFdj_01.png);
+    background-size:900px 900px;
+    border:2px solid #ccc;
+    display:none;
+}
+
+
+
+
+
+
+    /* shopmoreBoxRight */
+.shopmoreBoxRight{
+    width:700px;
+    min-height:462px;
+    padding-bottom:25px;
+    float:right;
+}
+.shopmoreBoxRight_one h1{
+    font-size:20px;
+    font-weight:400;
+    margin-bottom:10px;
+}
+.shopmoreBoxRight_one p{
+    font-size:14px;
+    line-height:20px;
+    margin-bottom:10px;
+    padding-right:40px;
+}
+.shopmoreBoxRight_one p span{
+    color:#ca141d;
+    margin-right:15px;
+}
+.shopmoreBoxRight_two{
+    font-size:12px;
+    line-height:30px;
+    color:#333;
+    background:#f1f1f1;
+    padding-top:14px;
+    padding-bottom:3px;
+}
+.shopmoreBoxRight_two label{
+    display: inline-block;
+    width:85px;
+    text-indent:10px;
+}
+.div_one{
+    margin-bottom:4px;
+}
+.div_two{
+    margin-bottom:4px;
+}
+.div_three{
+    margin-bottom:4px;
+    overflow: hidden;
+}
+.div_one span{
+    padding-right:3px;
+}
+.div_one span:nth-of-type(1){
+    font-size:18px;
+    color:#ca141d;
+}
+.div_one span:nth-of-type(2){
+    font-size:24px;
+    color:#ca141d;
+}
+.div_one span:nth-of-type(2) b{
+    font-size:18px;
+    color:#ca141d;
+    font-weight:normal;
+}
+.div_one span:nth-of-type(3){
+    font-size:18px;
+    color:#a4a4a4;
+    text-decoration:line-through;
+}
+.div_two span{
+    color:#fff;
+    background:#ef5a62;
+    padding:0 3px;
+    margin-right:5px;
+}
+.div_two a{
+    color:#ca141d;
+}
+.div_three label{
+    display:block;
+    float: left;
+}
+.div_three .text_p{
+    float: left;
+}
+.text_p span{
+    display: inline-block;
+    line-height:18px;
+    padding:0 5px;
+    border:1px solid #ca141d;
+    margin-right:10px;
+    color:#ca141d;
+}
+.shopmoreBoxRight_three{
+    font-size:12px;
+    line-height:25px;
+    color:#333;
+    margin-top:20px;
+    padding-top:14px;
+    padding-bottom:3px;
+    border-top:1px solid #a4a4a4;
+}
+.shopmoreBoxRight_three a{
+    color:#333;
+}
+.shopmoreBoxRight_three label{
+    display: inline-block;
+    line-height:30px;
+    width:85px;
+    text-indent:10px;
+}
+.text_one{
+    overflow: hidden;
+    margin-bottom:10px;
+}
+.text_one a{
+    padding:3px 12px;
+    display: inline-block;
+    border:1px solid #a4a4a4;
+    margin-right:8px;
+    margin-left:-3px;
+}
+.text_one a img{
+    width:30px;
+    height:30px;
+    float: left;
+    margin-right:5px;
+}
+    /* -------------shopNumBox------------- */
+.shopNumBox{
+    overflow: hidden;
+}
+.shopNumBox .shopNum{
+    border:1px solid #e2e2e2;
+    float: left;
+    margin-right:10px;
+    margin-left:10px;
+}
+.shopNum input{
+    width:41px;
+    height:44px;
+    line-height:44px;
+    text-align:center;
+    float: left;
+    border:none;
+    outline:none;
+    font-size:18px;
+}
+.shopNum p{
+    float: left;
+    border-left:1px solid #e2e2e2;
+}
+.shopNum p a{
+    display:block;
+    width:21px;
+    height:21px;
+    line-height:22px;
+    background:#fff;
+    text-align:center;
+    border-top:1px solid #e2e2e2;
+}
+.shopNow_gwc a{
+    display:inline-block;
+    line-height: 46px;
+    width:172px;
+    text-align:center;
+    color:#fff;
+    margin-right:10px;
+}
+.gwcBtn{
+    background:#fc600c;
+}
+.nowBtn{
+    background:#ca151d;
+}
+/* ---------------------------------------------------------------- */
+/* bottom */
+.zsy_bottom{
+    width:100%;
+    background:#f9f9f9;
+}
+.bottomBox{
+    max-width:1200px;
+    margin:0 auto;
+}
+    /* bottomBoxOne */
+.bottomBoxOne{
+    overflow: hidden;
+    padding:20px 0;
+}
+.bottomBoxOne ul li{
+    width:25%;
+    float: left;
+}
+.bottomBoxOne ul li a{
+    font-size:18px;
+    color:#000;
+    line-height:40px;
+}
+.bottomBoxOne ul li a img{
+    margin-right:20px;
+    float: left;
+}
+    /* bottomBoxTwo */
+.bottomBoxTwo{
+    padding:20px 0;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    overflow: hidden;
+}
+.bottomBoxTwo_left{
+    width:75%;
+    float: left;
+    border-right:1px solid #ccc;
+}
+.bottomBoxTwo_left ul{
+    width:16.6%;
+    float: left;
+}
+.bottomBoxTwo_left ul p{
+    font-size:14px;
+    color:#000;
+    margin-bottom:7px;
+}
+.bottomBoxTwo_left ul li a{
+    font-size:12px;
+    line-height:22px;
+    color:#777;
+}
+.bottomBoxTwo_right{
+    width:24%;
+    float: left;
+    text-align:center;
+    overflow: hidden;
+}
+.bottomBoxTwo_right p:nth-of-type(1){
+    font-size:24px;
+    line-height:1.5;
+    color:#cb242b;
+    font-weight:bold;
+}
+.bottomBoxTwo_right p:nth-of-type(2){
+    font-size:14px;
+    line-height:22px;
+    color:#333;
+}
+.bottomBoxTwo_right .unlineSever{
+    display:block;
+    margin:0 auto;
+    width:168px;
+    height:32px;
+    border:1px solid #cb242b;
+    border-radius:6px;
+    color:#cb242b;
+    font-size:14px;
+    line-height:32px;
+    margin-top:10px;
+}
+.bottomBoxTwo_right .unlineSever img{
+    float: left;
+    margin-left:40px;
+    margin-right:-40px;
+}
+.bottomBoxTwo_right p:nth-of-type(3){
+    display:inline-block;
+    text-align:center;
+    margin-top:30px;
+}
+.bottomBoxTwo_right p:nth-of-type(3) span{
+    float: left;
+    font-size:14px;
+    margin-right:11px;
+    color:#333;
+}
+.bottomBoxTwo_right p:nth-of-type(3) img{
+    width:20px;
+    height:20px;
+    float: left;
+    margin-right:11px;
+}
+.bottomBoxThree{
+    padding:20px 0;
+    overflow: hidden;
+}
+.bottomBoxThree .img_left{
+    float: left;
+    margin-right:20px;
+}
+.bottomBoxThree .img_left img{
+    width:82px;
+    height:20px;
+    float: left;
+}
+.bottomBoxThree .bottomBoxText{
+    font-size:12px;
+    line-height:20px;
+    color:#a4a4a4;
+    float: left;
+}
+.bottomBoxText a{
+    color:#a4a4a4;
+}
+.bottomBoxText p:nth-of-type(1) a{
+    color:#777;
+}
+.bottomBoxThree .bottomBoxImg{
+    float: right;
+}
+.bottomBoxThree .bottomBoxImg img{
+    width:70px;
+    height:24px;
+    margin-left:18px;
+    float: left;
+}
+.bottomBox .bottomBoxOne a:hover{
+    color:#ca151d;
+}
+.bottomBox .bottomBoxTwo a:hover{
+    color:#ca151d;
+}
+.bottomBox .bottomBoxThree a:hover{
+    color:#ca151d;
+}
